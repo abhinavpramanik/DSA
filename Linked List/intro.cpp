@@ -54,6 +54,15 @@ int lengthofLL(Node* head){
     return cnt;
 }
 
+int searchElement(Node* head, int val){
+    Node* temp = head;
+    while(temp){
+        if(temp->data == val) return 1;
+        temp = temp->next;
+    }
+    return 0;
+}
+
 int main(){
     // Input values that will be used to build the linked list.
     vector<int> arr = {2,3,8,7,6,5};
